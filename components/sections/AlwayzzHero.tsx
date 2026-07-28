@@ -9,7 +9,7 @@ const bgImageUrl =
 
 const avatarUrl = "https://framerusercontent.com/images/hfneFL6CHBi5BnNvCeOaqU9HqE4.png";
 
-const tickerItems = ["Brand Identity", "App Development", "Visual Design", "Creative Video", "Iconography"];
+const tickerItems = ["AI Interfaces", "Enterprise Dashboards", "Design Systems", "Web Engineering", "Product Strategy"];
 
 const trustedLogos = [
   { name: "Airbnb", style: { fontFamily: "cursive, serif", fontWeight: 700 } },
@@ -120,16 +120,16 @@ export function AlwayzzHero() {
           </div>
 
           {/* Main Hero Title */}
-          <h1 className="mt-6 max-w-[550px] font-sans text-[44px] sm:text-[60px] md:text-[82px] font-semibold leading-[1.03] tracking-[-0.07em] text-[#0a0a0a]">
-            Premium creative{" "}
-            <span className="serif italic font-semibold tracking-[-0.08em]">alwayzz</span>
+          <h1 className="mt-6 max-w-[620px] font-sans text-[42px] sm:text-[58px] md:text-[80px] font-semibold leading-[1.03] tracking-[-0.07em] text-[#0a0a0a]">
+            Design-led product studio{" "}
+            <span className="serif italic font-semibold tracking-[-0.08em]">neuro</span>
             <sup className="font-sans text-[20px] sm:text-[24px] font-semibold align-super ml-0.5">®</sup>{" "}
             on demand.
           </h1>
 
           {/* Subtitle */}
-          <p className="mt-5 max-w-[476px] font-sans text-[15px] sm:text-[17px] font-normal leading-[1.45] text-[#6b6b6b]">
-            A flexible design partnership for founders, brands, and agencies who want top craft delivered on their timeline.
+          <p className="mt-5 max-w-[520px] font-sans text-[15px] sm:text-[17px] font-normal leading-[1.45] text-[#6b6b6b]">
+            A design-led digital product & engineering studio crafting enterprise dashboards, AI interfaces, and brand systems for ambitious teams.
           </p>
 
           {/* CTA Row */}

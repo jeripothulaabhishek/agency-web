@@ -9,11 +9,12 @@ export function AlwayzzHeader() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuLinks = [
-    { label: "Projects", href: "/work" },
-    { label: "Plans", href: "/pricing" },
-    { label: "Team", href: "/about" },
-    { label: "FAQs", href: "/#faqs" },
-    { label: "Get in Touch", href: "/contact" }
+    { label: "Selected Work", href: "/work" },
+    { label: "Capabilities & Services", href: "/services" },
+    { label: "Pricing & Plans", href: "/pricing" },
+    { label: "Studio & Team", href: "/about" },
+    { label: "Insights & Resources", href: "/resources" },
+    { label: "Start a Project", href: "/contact" }
   ];
 
   return (
@@ -21,8 +22,8 @@ export function AlwayzzHeader() {
       <header className="fixed inset-x-0 top-0 z-[100] flex justify-center px-4 py-[19px] sm:px-[36px]">
         <div className="flex w-full max-w-[1200px] items-center justify-between">
           <Link href="/" className="flex items-baseline gap-0.5 group">
-            <span className="serif text-[30px] font-semibold italic tracking-[-0.08em] text-[#0a0a0a]">
-              Alwayzz
+            <span className="serif text-[28px] sm:text-[30px] font-semibold italic tracking-[-0.08em] text-[#0a0a0a]">
+              Neuro Agency
             </span>
             <sup className="font-sans text-[14px] font-semibold text-[#0a0a0a] select-none">®</sup>
           </Link>
@@ -56,14 +57,14 @@ export function AlwayzzHeader() {
                   key={link.label}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="font-sans text-[32px] font-medium tracking-[-0.04em] text-[#0a0a0a] transition-opacity hover:opacity-60 sm:text-[48px]"
+                  className="font-sans text-[30px] font-medium tracking-[-0.04em] text-[#0a0a0a] transition-opacity hover:opacity-60 sm:text-[44px]"
                 >
                   {link.label}
                 </Link>
               ))}
             </nav>
             <footer className="text-center font-sans text-xs font-medium text-[#6b6b6b]">
-              © {new Date().getFullYear()} Alwayzz Inc. All rights reserved.
+              © {new Date().getFullYear()} Neuro Agency Inc. All rights reserved.
             </footer>
           </motion.div>
         )}
