@@ -22,8 +22,8 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 flex items-end bg-gradient-to-t from-ink/70 via-ink/10 to-transparent p-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span className="translate-y-3 rounded-full bg-white px-4 py-2 text-sm font-black text-ink transition-transform duration-300 group-hover:translate-y-0">
-                View Case Study
+              <span className="shine-sweep translate-y-3 rounded-full bg-accent px-4 py-2 text-sm font-black text-white shadow-glow transition-transform duration-300 group-hover:translate-y-0">
+                View Case Study →
               </span>
             </div>
           </div>

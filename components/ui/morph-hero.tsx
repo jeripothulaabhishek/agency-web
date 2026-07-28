@@ -25,6 +25,8 @@ export function MorphHero() {
   const springY = useSpring(mouseY, { stiffness: 90, damping: 22, mass: 0.4 });
   const visualX = useTransform(springX, [-0.5, 0.5], reducedMotion ? [0, 0] : [-18, 18]);
   const visualY = useTransform(springY, [-0.5, 0.5], reducedMotion ? [0, 0] : [-12, 12]);
+  const rotateX = useTransform(springY, [-0.5, 0.5], reducedMotion ? [0, 0] : [6, -6]);
+  const rotateY = useTransform(springX, [-0.5, 0.5], reducedMotion ? [0, 0] : [-8, 8]);
 
   const slides = useMemo(
     () =>
@@ -134,7 +136,7 @@ export function MorphHero() {
           </motion.div>
         </motion.div>
 
-        <motion.div style={{ x: visualX, y: visualY }} className="relative mx-auto h-[480px] w-full max-w-3xl sm:h-[560px] lg:h-[650px]">
+        <motion.div style={{ x: visualX, y: visualY, rotateX, rotateY, transformPerspective: 1200 }} className="relative mx-auto h-[480px] w-full max-w-3xl sm:h-[560px] lg:h-[650px]">
           <div className="absolute left-1/2 top-1/2 h-[78%] w-[78%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/12 blur-3xl" />
           <div className="absolute inset-0 rounded-[3rem] glass-crystal shadow-editorial" />
 
