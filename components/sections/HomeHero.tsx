@@ -1,5 +1,5 @@
-import { MorphHero } from "@/components/ui/morph-hero";
+import { AlwayzzHero } from "@/components/sections/AlwayzzHero";
 
 export function HomeHero() {
-  return <MorphHero />;
+  return <AlwayzzHero />;
 }
